@@ -18,13 +18,13 @@
     combos {
         compatible = "zmk,combos";
 
-        left_sys_reset {
-            bindings = <&sys_reset>;
+        left_bootloader {
+            bindings = <&bootloader>;
             key-positions = <38 37 36>;
         };
 
-        right_sys_reset {
-            bindings = <&sys_reset>;
+        right_bootloader {
+            bindings = <&bootloader>;
             key-positions = <39 41 40>;
         };
 
