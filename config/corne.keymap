@@ -22,6 +22,18 @@
             bindings = <&tog 5>;
             key-positions = <24 29 30 35>;
         };
+
+        left_sys_reset {
+            bindings = <&sys_reset>;
+            key-positions = <38 37 36>;
+            layers = <5>;
+        };
+
+        right_sys_reset {
+            bindings = <&sys_reset>;
+            key-positions = <39 41 40>;
+            layers = <5>;
+        };
     };
 
     keymap {
