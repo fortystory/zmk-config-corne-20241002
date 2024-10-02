@@ -20,7 +20,7 @@
 
         bul {
             bindings = <&tog 5>;
-            key-positions = <28 27 26 31 32 33>;
+            key-positions = <29 28 30 31>;
         };
 
         left_sys_reset {
@@ -90,10 +90,10 @@
 
         number_layer {
             bindings = <
-&kp ESC  &none         &none         &none      &none           &none        &kp ASTERISK  &kp N7     &kp N8    &kp N9  &kp SLASH  &kp BSPC
-&kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none        &kp KP_MINUS  &kp N4     &kp N5    &kp N6  &kp N0     &kp ENTER
-&none    &kp LC(Z)     &kp LC(X)     &kp LC(C)  &kp LC(V)       &kp LC(B)    &kp KP_PLUS   &kp N1     &kp N2    &kp N3  &kp EQUAL  &kp DEL
-                                     &kp LCTRL  &kp SPACE       &none        &none         &kp ENTER  &kp LGUI
+&kp ESC  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)         &kp ASTERISK  &kp N7     &kp N8    &kp N9  &kp SLASH  &kp BSPC
+&kp TAB  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)         &kp KP_MINUS  &kp N4     &kp N5    &kp N6  &kp N0     &kp ENTER
+&none    &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)         &kp KP_PLUS   &kp N1     &kp N2    &kp N3  &kp EQUAL  &kp DEL
+                               &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &none         &kp ENTER  &kp LGUI
             >;
 
             label = "12345";
@@ -112,10 +112,10 @@
 
         both_layer {
             bindings = <
-&none  &none  &none  &none  &none  &to 0    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &none  &none  &none  &none  &none    &none         &none         &none         &none         &none         &none
-&none  &none  &none  &none  &none  &none    &none         &none         &none         &none         &none         &none
-                     &none  &none  &none    &none         &none         &none
+&bt BT_CLR  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none       &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+&none       &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+                                        &none         &none         &none           &none         &none         &none
             >;
 
             label = "Bulebooth";
