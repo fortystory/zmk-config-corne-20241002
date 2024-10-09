@@ -74,9 +74,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&mt TILDE GRAVE  &kp EXCL                    &kp AT                      &kp HASH       &kp DLLR                                &kp PRCNT         &none   &none            &none      &none          &none          &kp BSPC
-&kp CARET        &kp AMPERSAND               &kp ASTERISK                &kp PIPE       &kp MINUS                               &mt PLUS EQUAL    &none   &kp RIGHT_SHIFT  &kp LCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &kp ENTER
-&kp SLASH        &mt GREATER_THAN LESS_THAN  &mt RIGHT_BRACE LEFT_BRACE  &mt RBKT LBKT  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp BACKSLASH     &none   &none            &none      &none          &none          &kp DEL
+&kp CARET        &kp AMPERSAND               &kp AT                      &kp HASH       &kp DLLR                                &kp PRCNT         &none   &none            &none      &none          &none          &kp BSPC
+&mt TILDE GRAVE  &kp EXCLAMATION             &kp ASTERISK                &kp MINUS      &kp EQUAL                               &kp PIPE          &none   &kp RIGHT_SHIFT  &kp LCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &kp ENTER
+&kp BACKSLASH    &mt GREATER_THAN LESS_THAN  &mt RIGHT_BRACE LEFT_BRACE  &mt RBKT LBKT  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp SLASH         &none   &none            &none      &none          &none          &kp DEL
                                                                          &kp TAB        &kp SPACE                               &kp UNDERSCORE    &trans  &none            &none
             >;
 
