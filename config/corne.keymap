@@ -61,7 +61,7 @@
 &kp TAB    &none         &none              &none      &none           &none    &none       &none       &none         &none      &none              &kp BSPC
 &kp ESC    &kp LEFT_WIN  &kp LEFT_ALT       &kp LCTRL  &kp LEFT_SHIFT  &none    &kp LEFT    &kp DOWN    &kp UP_ARROW  &kp RIGHT  &mt HOME PAGE_UP   &kp ENTER
 &kp LSHFT  &none         &kp C_VOLUME_DOWN  &none      &kp C_VOL_UP    &none    &kp C_MUTE  &kp C_PREV  &kp C_NEXT    &kp C_PP   &mt END PAGE_DOWN  &kp DEL
-                                            &kp LCTRL  &kp SPACE       &none    &none       &kp ENTER   &kp LGUI
+                                            &kp LCTRL  &kp SPACE       &none    &kp ENTER   &kp SPACE   &kp LGUI
             >;
 
             label = "hjkl_media";
