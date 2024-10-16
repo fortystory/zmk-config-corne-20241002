@@ -27,6 +27,12 @@
             bindings = <&tog 5>;
             key-positions = <24 25 26>;
         };
+
+        alt-f5 {
+            bindings = <&kp LA(F5)>;
+            key-positions = <37 40>;
+            layers = <0>;
+        };
     };
 
     keymap {
