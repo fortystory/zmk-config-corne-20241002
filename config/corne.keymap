@@ -28,8 +28,8 @@
             key-positions = <24 25 26>;
         };
 
-        alt-f5 {
-            bindings = <&kp LA(F5)>;
+        shift-ctrl-f5 {
+            bindings = <&kp LS(LC(F5))>;
             key-positions = <37 40>;
             layers = <0>;
         };
