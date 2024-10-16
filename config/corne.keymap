@@ -40,10 +40,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y  &kp U              &kp I        &kp O            &kp P               &kp BSPC
-&kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G        &kp H  &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RWIN SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z           &kp X           &kp C        &kp V             &kp B        &kp N  &kp M              &kp COMMA    &kp DOT          &kp SLASH           &key_repeat
-                                           &mo 3        &kp SPACE         &lt 1 TAB    &mo 4  &lt 2 ENTER        &key_repeat
+&kp TAB    &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y         &kp U              &kp I                    &kp O              &kp P                &kp BSPC
+&kp ESC    &kp A           &kp S           &kp D               &kp F             &kp G        &kp H         &kp J              &kp K                    &kp L              &kp SEMI             &kp SQT
+&kp LSHFT  &mt LEFT_WIN Z  &mt LEFT_ALT X  &mt LEFT_CONTROL C  &mt LEFT_SHIFT V  &kp B        &kp N         &mt RIGHT_SHIFT M  &mt RIGHT_CONTROL COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_WIN SLASH  &key_repeat
+                                           &mo 3               &kp SPACE         &lt 1 TAB    &lt 4 RETURN  &kp SPACE          &mo 2
             >;
 
             label = "Corne";
@@ -57,10 +57,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &none         &none              &none      &none           &none    &none       &none       &none         &none      &none              &kp BSPC
-&kp ESC    &kp LEFT_WIN  &kp LEFT_ALT       &kp LCTRL  &kp LEFT_SHIFT  &none    &kp LEFT    &kp DOWN    &kp UP_ARROW  &kp RIGHT  &mt HOME PAGE_UP   &kp ENTER
-&kp LSHFT  &none         &kp C_VOLUME_DOWN  &none      &kp C_VOL_UP    &none    &kp C_MUTE  &kp C_PREV  &kp C_NEXT    &kp C_PP   &mt END PAGE_DOWN  &kp DEL
-                                            &kp LCTRL  &kp SPACE       &none    &kp ENTER   &kp SPACE   &kp LGUI
+&kp TAB    &none         &none         &none      &none         &none    &none       &none       &none         &none      &none              &kp BSPC
+&kp ESC    &none         &kp C_VOL_DN  &none      &kp C_VOL_UP  &none    &kp LEFT    &kp DOWN    &kp UP_ARROW  &kp RIGHT  &mt HOME PAGE_UP   &kp ENTER
+&kp LSHFT  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT    &none    &kp C_MUTE  &kp C_PREV  &kp C_NEXT    &kp C_PP   &mt END PAGE_DOWN  &kp DEL
+                                       &kp LCTRL  &kp SPACE     &none    &kp ENTER   &kp SPACE   &kp LGUI
             >;
 
             label = "hjkl_media";
@@ -74,10 +74,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp CARET        &kp AMPERSAND    &kp AT          &kp HASH              &kp DLLR               &kp PRCNT         &none   &none            &none      &none          &none          &kp BSPC
-&mt TILDE GRAVE  &kp EXCLAMATION  &kp ASTERISK    &kp MINUS             &kp EQUAL              &kp LBKT          &none   &kp RIGHT_SHIFT  &kp LCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &kp ENTER
-&kp BACKSLASH    &kp RIGHT_BRACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT          &none   &none            &none      &none          &none          &kp DEL
-                                                  &kp PIPE              &kp SPACE              &kp UNDERSCORE    &trans  &none            &none
+&kp CARET        &kp AMPERSAND    &kp AT          &kp HASH              &kp DLLR               &kp PRCNT         &none   &none      &none      &none     &none     &kp BSPC
+&mt TILDE GRAVE  &kp EXCLAMATION  &kp ASTERISK    &kp MINUS             &kp EQUAL              &kp LBKT          &none   &none      &none      &none     &none     &kp ENTER
+&kp BACKSLASH    &kp RIGHT_BRACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT          &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp DEL
+                                                  &kp PIPE              &kp SPACE              &kp UNDERSCORE    &trans  &none      &none
             >;
 
             label = "!@#$";
@@ -96,10 +96,10 @@
 
         Fn_layer {
             bindings = <
-&none  &kp F12  &kp F11  &kp F10  &kp F9     &none    &none   &none            &none      &none          &none          &kp BSPC
-&none  &kp F4   &kp F3   &kp F2   &kp F1     &none    &none   &kp RIGHT_SHIFT  &kp LCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &kp ENTER
-&none  &kp F8   &kp F7   &kp F6   &kp F5     &none    &none   &none            &none      &none          &none          &kp DEL
-                         &kp TAB  &kp SPACE  &none    &trans  &none            &none
+&none  &kp F12  &kp F11  &kp F10  &kp F9     &none    &none   &none      &none      &none     &none     &kp BSPC
+&none  &kp F4   &kp F3   &kp F2   &kp F1     &none    &none   &none      &none      &none     &none     &kp ENTER
+&none  &kp F8   &kp F7   &kp F6   &kp F5     &none    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp DEL
+                         &kp TAB  &kp SPACE  &none    &trans  &none      &none
             >;
 
             label = "Fn";
