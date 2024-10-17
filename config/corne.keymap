@@ -28,8 +28,8 @@
             key-positions = <24 25 26>;
         };
 
-        shift-ctrl-f5 {
-            bindings = <&kp LS(LC(F5))>;
+        f17 {
+            bindings = <&kp F17>;
             key-positions = <37 40>;
             layers = <0>;
         };
@@ -49,7 +49,7 @@
 &kp TAB    &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y         &kp U              &kp I                    &kp O              &kp P                &kp BSPC
 &kp ESC    &kp A           &kp S           &kp D               &kp F             &kp G        &kp H         &kp J              &kp K                    &kp L              &kp SEMI             &kp SQT
 &kp LSHFT  &mt LEFT_WIN Z  &mt LEFT_ALT X  &mt LEFT_CONTROL C  &mt LEFT_SHIFT V  &kp B        &kp N         &mt RIGHT_SHIFT M  &mt RIGHT_CONTROL COMMA  &mt RIGHT_ALT DOT  &mt RIGHT_WIN SLASH  &key_repeat
-                                           &mo 3               &kp SPACE         &lt 1 TAB    &lt 4 RETURN  &kp SPACE          &mo 2
+                                           &mo 3               &kp SPACE         &lt 1 TAB    &lt 2 RETURN  &kp SPACE          &mo 4
             >;
 
             label = "Corne";
@@ -80,10 +80,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp CARET        &kp AMPERSAND    &kp AT          &kp HASH              &kp DLLR               &kp PRCNT         &none   &none      &none      &none     &none     &kp BSPC
-&mt TILDE GRAVE  &kp EXCLAMATION  &kp ASTERISK    &kp MINUS             &kp EQUAL              &kp LBKT          &none   &none      &none      &none     &none     &kp ENTER
-&kp BACKSLASH    &kp RIGHT_BRACE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT          &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp DEL
-                                                  &kp PIPE              &kp SPACE              &kp UNDERSCORE    &trans  &none      &none
+&kp CARET        &kp AMPERSAND    &kp AT          &kp HASH              &kp DLLR          &kp PRCNT         &none   &none      &none      &none     &none     &kp BSPC
+&mt TILDE GRAVE  &kp EXCLAMATION  &kp ASTERISK    &kp MINUS             &kp EQUAL         &kp UNDERSCORE    &none   &mo 6      &none      &none     &none     &kp ENTER
+&kp BACKSLASH    &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp PIPE          &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp DEL
+                                                  &kp PIPE              &kp SPACE         &kp UNDERSCORE    &trans  &none      &none
             >;
 
             label = "!@#$";
@@ -120,6 +120,15 @@
             >;
 
             label = "Bulebooth";
+        };
+
+        braces_layer {
+            bindings = <
+&trans  &trans            &trans           &trans                 &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans           &trans                 &trans             &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                           &trans                 &trans             &trans    &trans  &trans  &trans
+            >;
         };
     };
 
