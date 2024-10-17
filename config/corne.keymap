@@ -129,6 +129,8 @@
 &trans  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                            &trans                 &trans             &trans    &trans  &trans  &trans
             >;
+
+            label = ">})]";
         };
     };
 
