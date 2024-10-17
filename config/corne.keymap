@@ -33,6 +33,11 @@
             key-positions = <37 40>;
             layers = <0>;
         };
+
+        play {
+            bindings = <&tog 7>;
+            key-positions = <23 22 13 12>;
+        };
     };
 
     keymap {
@@ -131,6 +136,17 @@
             >;
 
             label = ">})]";
+        };
+
+        potplayer_layer {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3   &kp N4     &kp N5       &kp P      &none            &none              &none     &kp P           &kp BSPC
+&kp LEFT   &kp A   &kp S   &kp D    &kp F      &kp ENTER    &kp H      &kp LS(PAGE_UP)  &kp LS(PAGE_DOWN)  &none     &kp UP_ARROW    &none
+&kp RIGHT  &kp Z   &kp X   &kp C    &kp V      &kp B        &none      &none            &none              &kp LEFT  &kp DOWN_ARROW  &kp RIGHT
+                           &kp ESC  &kp SPACE  &kp ENTER    &kp ENTER  &kp SPACE        &kp ESC
+            >;
+
+            label = "potplayer";
         };
     };
 
