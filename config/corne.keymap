@@ -38,6 +38,32 @@
             bindings = <&tog 7>;
             key-positions = <23 22 13 12>;
         };
+
+        se {
+            bindings = <&e_s_key>;
+            key-positions = <14 3>;
+        };
+
+        li {
+            bindings = <&l_i_key>;
+            key-positions = <21 8>;
+        };
+    };
+
+    macros {
+        e_s_key: two_keys {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp S>;
+            label = "TWO_KEYS";
+        };
+
+        l_i_key: l_i_key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp I>;
+            label = "L_I_KEY";
+        };
     };
 
     keymap {
