@@ -11,7 +11,7 @@
 &mt {
     quick-tap-ms = <180>;
     flavor = "tap-preferred";
-    tapping-term-ms = <180>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -81,11 +81,12 @@
     };
 
     macros {
-        e_s_key: two_keys {
+        e_s_key: e_s_key {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &kp S>;
-            label = "TWO_KEYS";
+            label = "e_s_key";
+            wait-ms = <75>;
         };
 
         l_i_key: l_i_key {
@@ -93,6 +94,7 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp I>;
             label = "L_I_KEY";
+            wait-ms = <75>;
         };
     };
 
