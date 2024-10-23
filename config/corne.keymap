@@ -109,7 +109,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q           &kp W           &kp E        &kp R         &kp T        &kp Y         &kp U         &kp I        &kp O       &kp P          &kp BSPC
+&kp GRAVE  &kp Q           &kp W           &kp E        &kp R         &kp T        &kp Y         &kp U         &kp I        &kp O       &kp P          &kp BSPC
 &kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H         &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RWIN SEMI  &kp SQT
 &kp LSHFT  &kp Z           &kp X           &kp C        &kp V         &kp B        &kp N         &kp M         &kp COMMA    &kp DOT     &kp FSLH       &key_repeat
                                            &mo 3        &kp SPACE     &lt 1 TAB    &lt 2 RETURN  &kp SPACE     &mo 4
@@ -144,8 +144,8 @@
 
             bindings = <
 &kp CARET      &kp AMPERSAND    &kp AT          &kp HASH                &kp DLLR                &kp PRCNT         &none   &none      &none      &none     &none     &kp BSPC
-&kp GRAVE      &kp EXCLAMATION  &kp ASTERISK    &mt GREATER_THAN MINUS  &mt GREATER_THAN EQUAL  &kp UNDERSCORE    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
-&kp BACKSLASH  &kp TILDE        &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp LEFT_BRACKET        &kp PIPE          &none   &none      &none      &none     &none     &kp DEL
+&kp TILDE      &kp EXCLAMATION  &kp ASTERISK    &mt GREATER_THAN MINUS  &mt GREATER_THAN EQUAL  &kp UNDERSCORE    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&kp BACKSLASH  &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp LEFT_BRACKET        &kp PIPE          &none   &none      &none      &none     &none     &kp DEL
                                                 &kp PIPE                &kp SPACE               &kp UNDERSCORE    &trans  &none      &none
             >;
 
