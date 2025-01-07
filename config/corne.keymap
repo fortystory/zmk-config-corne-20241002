@@ -45,6 +45,9 @@
         combo_colon {
             bindings = <&kp COLON>;
             key-positions = <16 22>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
+            layers = <0>;
         };
 
         combo_left_bracket_quotation {
