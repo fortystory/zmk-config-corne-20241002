@@ -179,10 +179,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q           &kp W           &kp E                 &kp R         &kp T      &kp Y      &kp U         &kp I                  &kp O                &kp P          &kp BSPC
-&kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D           &mt LSHIFT F  &kp G      &kp H      &mt RSHIFT J  &mt RCTRL K            &mt RALT L           &mt RWIN SEMI  &kp SQT
-&kp LSHFT  &lt 6 Z         &lt 4 X         &lt 3 C               &lt 1 V       &kp B      &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &kp FSLH       &kp MINUS
-                                           &mt LCTRL UNDERSCORE  &kp SPACE     &kp TAB    &kp ENTER  &kp SPACE     &key_repeat
+&kp GRAVE  &kp Q           &kp W           &kp E                 &kp R         &kp T        &kp Y      &kp U         &kp I                  &kp O                &kp P          &kp BSPC
+&kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D           &mt LSHIFT F  &kp G        &kp H      &mt RSHIFT J  &mt RCTRL K            &mt RALT L           &mt RWIN SEMI  &kp SQT
+&kp LSHFT  &kp Z           &lt 4 X         &lt 3 C               &lt 1 V       &kp B        &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &kp FSLH       &kp MINUS
+                                           &mt LCTRL UNDERSCORE  &kp SPACE     &lt 6 TAB    &kp ENTER  &kp SPACE     &key_repeat
             >;
 
             label = "Corne";
