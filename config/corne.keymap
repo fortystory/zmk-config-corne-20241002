@@ -36,6 +36,63 @@
             key-positions = <37 40>;
             layers = <0>;
         };
+
+        combo_f8 {
+            bindings = <&kp F8>;
+            key-positions = <38 39>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <16 22>;
+        };
+
+        combo_left_bracket_quotation {
+            bindings = <&left_bracket_and_quotation>;
+            key-positions = <14 16>;
+        };
+
+        combo_quotation_right_bracket {
+            bindings = <&quotation_and_right_bracket>;
+            key-positions = <19 21>;
+        };
+
+        combo_arraw {
+            bindings = <&arraw>;
+            key-positions = <15 16>;
+            layers = <2>;
+        };
+
+        combo_arraw_eq {
+            bindings = <&arraw_eq>;
+            key-positions = <3 4>;
+            layers = <2>;
+        };
+
+        combo_dollar_combo {
+            bindings = <&kp DOLLAR>;
+            key-positions = <31 4>;
+        };
+
+        combo_ctrl_f19 {
+            bindings = <&kp LC(F19)>;
+            key-positions = <16 17>;
+        };
+
+        combo_ctrl_f20 {
+            bindings = <&kp LC(F20)>;
+            key-positions = <4 5>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <32 15>;
+        };
+
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <32 16>;
+        };
     };
 
     macros {
@@ -200,10 +257,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4        &trans        &trans          &mkp MB5         &trans  &trans
-                        &trans  &trans  &trans    &mkp LCLK       &mkp RCLK     &mkp MCLK
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4        &trans          &trans        &mkp MB5         &trans  &trans
+                        &trans  &trans  &trans    &mkp LCLK       &mkp RCLK       &mkp MCLK
             >;
 
             label = "mouse";
