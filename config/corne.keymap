@@ -100,6 +100,7 @@
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <34 35>;
+            layers = <0>;
         };
     };
 
@@ -159,7 +160,6 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
-            retro-tap;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
 
@@ -173,6 +173,7 @@
             flavor = "tap-unless-interrupted";
             retro-tap;
             hold-trigger-key-positions = <13 22>;
+            quick-tap-ms = <250>;
         };
     };
 
