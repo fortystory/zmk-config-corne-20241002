@@ -96,6 +96,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <32 16>;
         };
+
+        combo_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <34 35>;
+        };
     };
 
     macros {
