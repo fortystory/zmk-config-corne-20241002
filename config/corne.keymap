@@ -80,12 +80,12 @@
 
         combo_ctrl_f19 {
             bindings = <&kp LC(F19)>;
-            key-positions = <16 17>;
+            key-positions = <26 27 28>;
         };
 
         combo_ctrl_f20 {
             bindings = <&kp LC(F20)>;
-            key-positions = <4 5>;
+            key-positions = <4 2 3>;
         };
 
         combo_minus {
@@ -196,7 +196,7 @@
             bindings = <
 &kp GRAVE  &kp Q  &kp W           &kp E                 &kp R         &kp T        &kp Y      &kp U         &kp I                  &kp O                &kp P     &kp BSPC
 &kp ESC    &kp A  &mt LEFT_ALT S  &mt LCTRL D           &mt LSHIFT F  &lt 6 G      &kp H      &mt RSHIFT J  &mt RCTRL K            &mt RALT L           &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &lt 4 X         &lt 3 C               &kp V         &kp B        &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &kp FSLH  &kp LEFT_WIN
+&kp LSHFT  &kp Z  &lt 4 X         &lt 3 C               &kp V         &kp B        &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &kp FSLH  &mt LEFT_WIN PIPE
                                   &mt LCTRL UNDERSCORE  &kp SPACE     &lt 1 TAB    &kp ENTER  &kp SPACE     &mt RIGHT_ALT MINUS
             >;
 
