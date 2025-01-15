@@ -13,8 +13,8 @@
 
 &mt {
     quick-tap-ms = <250>;
-    flavor = "tap-unless-interrupted";
-    tapping-term-ms = <150>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <180>;
     retro-tap;
 };
 
@@ -164,7 +164,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
@@ -176,7 +176,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <180>;
             flavor = "tap-unless-interrupted";
             retro-tap;
             quick-tap-ms = <250>;
@@ -194,10 +194,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q           &kp W           &kp E                 &kp R         &kp T        &kp Y      &kp U         &kp I                  &kp O                &kp P          &kp BSPC
-&kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D           &mt LSHIFT F  &lt 6 G      &kp H      &mt RSHIFT J  &mt RCTRL K            &mt RALT L           &mt RWIN SEMI  &kp SQT
-&kp LSHFT  &kp Z           &lt 4 X         &lt 3 C               &lt 1 V       &kp B        &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &kp FSLH       &kp MINUS
-                                           &mt LCTRL UNDERSCORE  &kp SPACE     &lt 6 TAB    &kp ENTER  &kp SPACE     &key_repeat
+&kp GRAVE  &kp Q                     &kp W           &kp E                 &kp R         &kp T        &kp Y      &kp U         &kp I                  &kp O                &kp P                    &kp BSPC
+&kp ESC    &win_behavior LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D           &mt LSHIFT F  &lt 6 G      &kp H      &mt RSHIFT J  &mt RCTRL K            &mt RALT L           &win_behavior RWIN SEMI  &kp SQT
+&kp LSHFT  &kp Z                     &lt 4 X         &lt 3 C               &lt 1 V       &kp B        &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &kp FSLH                 &kp MINUS
+                                                     &mt LCTRL UNDERSCORE  &kp SPACE     &lt 6 TAB    &kp ENTER  &kp SPACE     &key_repeat
             >;
 
             label = "Corne";
