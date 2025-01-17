@@ -31,9 +31,9 @@
             key-positions = <24 25 26>;
         };
 
-        f17 {
+        combo_win_space_left {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <37 40>;
+            key-positions = <14 15 16>;
             layers = <0>;
         };
 
@@ -107,6 +107,12 @@
             bindings = <&tog 7>;
             key-positions = <36 37 38 40 39 41>;
             layers = <0 7>;
+        };
+
+        combo_win_space_right {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <20 21 19>;
+            layers = <0>;
         };
     };
 
