@@ -175,9 +175,9 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
 
-        rt_mt: rt_mt {
+        r_mt: r_mt {
             compatible = "zmk,behavior-hold-tap";
-            label = "RT_MT";
+            label = "R_MT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -185,6 +185,20 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             retro-tap;
+            hold-trigger-key-positions = <24 27 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
+        };
+
+        l_mt: l_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "L_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            retro-tap;
+            hold-trigger-key-positions = <30 35 11 23 10 22 34 33 21 9 8 20 32 31 19 6 18 7 6 7 8 9 10 11 18 19 20 21 22 23>;
         };
     };
 
@@ -199,10 +213,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q  &kp W              &kp E                 &kp R            &kp T        &kp Y      &kp U            &kp I                &kp O          &kp P     &kp BSPC
-&kp ESC    &kp A  &rt_mt LEFT_ALT S  &rt_mt LCTRL D        &rt_mt LSHIFT F  &lt 6 G      &kp H      &rt_mt RSHIFT J  &rt_mt RCTRL K       &rt_mt RALT L  &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &lt 4 X            &lt 3 C               &kp V            &kp B        &kp N      &kp M            &ls_mt 2 COMMA       &ls_mt 5 DOT   &kp FSLH  &mt LEFT_WIN PIPE
-                                     &mt LCTRL UNDERSCORE  &kp SPACE        &lt 1 TAB    &kp ENTER  &kp SPACE        &mt RIGHT_ALT MINUS
+&kp GRAVE  &kp Q  &kp W             &kp E                 &kp R           &kp T        &kp Y      &kp U           &kp I                &kp O         &kp P     &kp BSPC
+&kp ESC    &kp A  &l_mt LEFT_ALT S  &l_mt LCTRL D         &l_mt LSHIFT F  &lt 6 G      &kp H      &r_mt RSHIFT J  &r_mt RCTRL K        &r_mt RALT L  &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &lt 4 X           &lt 3 C               &kp V           &kp B        &kp N      &kp M           &ls_mt 2 COMMA       &ls_mt 5 DOT  &kp FSLH  &mt LEFT_WIN PIPE
+                                    &mt LCTRL UNDERSCORE  &kp SPACE       &lt 1 TAB    &kp ENTER  &kp SPACE       &mt RIGHT_ALT MINUS
             >;
 
             label = "Corne";
