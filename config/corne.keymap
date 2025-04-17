@@ -29,7 +29,7 @@
         };
 
         f17 {
-            bindings = <&kp F17>;
+            bindings = <&kp LC(SPACE)>;
             key-positions = <37 40>;
             layers = <0>;
         };
@@ -49,34 +49,43 @@
             key-positions = <21 8>;
         };
 
-        left_parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <28 27>;
+        combo_f8 {
+            bindings = <&kp F8>;
+            key-positions = <38 39>;
         };
 
-        right_parenthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <31 32>;
+        combo_ctrl_f9 {
+            bindings = <&kp LC(F9)>;
+            key-positions = <36 41>;
         };
 
-        left_brace {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <27 26>;
+        combos_win_space {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <16 19>;
         };
 
-        right_brace {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <32 33>;
+        combo_arraw_eq {
+            bindings = <&macro_arraw_eq>;
+            key-positions = <16 15>;
+            layers = <2>;
         };
 
-        left_brace_big {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <25 26>;
+        combo_arraw {
+            bindings = <&macro_arraw>;
+            key-positions = <16 15>;
+            layers = <2>;
         };
 
-        right_brace_big {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <34 33>;
+        combo_bracket_and_quotation {
+            bindings = <&macro_bracket_and_quotation>;
+            key-positions = <14 16>;
+            layers = <2>;
+        };
+
+        combo_quotation_and_bracket {
+            bindings = <&macro_quotation_and_bracket>;
+            key-positions = <19 21>;
+            layers = <2>;
         };
     };
 
@@ -96,6 +105,50 @@
             label = "L_I_KEY";
             wait-ms = <75>;
         };
+
+        macro_bracket_and_quotation: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp SQT>;
+            label = "NEW_MACRO";
+            wait-ms = <75>;
+        };
+
+        macro_quotation_and_bracket: macro_quotation_and_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp RIGHT_BRACKET>;
+            label = "MACRO_QUOTATION_AND_BRACKET";
+            wait-ms = <75>;
+        };
+
+        macro_arraw: macro_arraw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "MACRO_ARRAW";
+            wait-ms = <75>;
+        };
+
+        macro_arraw_eq: macro_arraw_eq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "MACRO_ARRAW_EQ";
+            wait-ms = <75>;
+        };
+    };
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <250>;
+        };
     };
 
     keymap {
@@ -109,10 +162,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE  &kp Q           &kp W           &kp E        &kp R         &kp T        &kp Y         &kp U         &kp I        &kp O       &kp P          &kp BSPC
-&kp ESC    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H         &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RWIN SEMI  &kp SQT
-&kp LSHFT  &kp Z           &kp X           &kp C        &kp V         &kp B        &kp N         &kp M         &kp COMMA    &kp DOT     &kp FSLH       &key_repeat
-                                           &mo 3        &kp SPACE     &lt 1 TAB    &lt 2 RETURN  &kp SPACE     &mo 4
+&kp GRAVE  &kp Q  &kp W           &kp E             &kp R         &kp T        &kp Y      &kp U         &kp I        &kp O       &kp P     &kp BSPC
+&kp ESC    &kp A  &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F  &kp G        &kp H      &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X           &kp C             &kp V         &kp B        &kp N      &kp M         &kp COMMA    &kp DOT     &kp FSLH  &kp DELETE
+                                  &lt 3 UNDERSCORE  &lt 1 SPACE   &lt 1 TAB    &kp ENTER  &lt 2 SPACE   &lt 4 MINUS
             >;
 
             label = "Corne";
@@ -126,10 +179,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &none     &none         &none      &none         &none    &none       &none       &none         &none      &none              &kp BSPC
-&kp ESC    &kp LGUI  &kp LALT      &kp LCTRL  &kp LSHFT     &none    &kp LEFT    &kp DOWN    &kp UP_ARROW  &kp RIGHT  &mt HOME PAGE_UP   &kp ENTER
-&kp LSHFT  &none     &kp C_VOL_DN  &none      &kp C_VOL_UP  &none    &kp C_MUTE  &kp C_PREV  &kp C_NEXT    &kp C_PP   &mt END PAGE_DOWN  &kp DEL
-                                   &kp LCTRL  &kp SPACE     &none    &kp ENTER   &kp SPACE   &kp LGUI
+&kp TAB    &none     &none         &none      &none         &none    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &none              &kp BSPC
+&kp ESC    &kp LGUI  &kp LALT      &kp LCTRL  &kp LSHFT     &none    &kp LEFT        &kp DOWN              &kp UP_ARROW           &kp RIGHT         &mt HOME PAGE_UP   &kp ENTER
+&kp LSHFT  &none     &kp C_VOL_DN  &none      &kp C_VOL_UP  &none    &kp LESS_THAN   &kp LBKT              &kp RBKT               &kp GREATER_THAN  &mt END PAGE_DOWN  &kp DEL
+                                   &kp LCTRL  &kp SPACE     &none    &kp C_PREV      &kp C_PP              &kp C_NEXT
             >;
 
             label = "HJKL_media";
@@ -143,10 +196,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp CARET      &kp AMPERSAND    &kp AT          &kp HASH                &kp DLLR                &kp PRCNT         &none   &none      &none      &none     &none     &kp BSPC
-&kp TILDE      &kp EXCLAMATION  &kp ASTERISK    &mt GREATER_THAN MINUS  &mt GREATER_THAN EQUAL  &kp UNDERSCORE    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
-&kp BACKSLASH  &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp LEFT_BRACKET        &kp PIPE          &none   &none      &none      &none     &none     &kp DEL
-                                                &kp PIPE                &kp SPACE               &kp UNDERSCORE    &trans  &none      &none
+&kp GRAVE       &kp AMPERSAND    &kp AT        &kp HASH   &kp DLLR       &kp PRCNT         &none  &none      &none      &none     &none     &kp BSPC
+&kp ESCAPE      &kp EXCLAMATION  &kp ASTERISK  &kp MINUS  &kp EQUAL      &kp TILDE         &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&kp LEFT_SHIFT  &kp CARET        &kp SLASH     &kp PIPE   &kp BACKSLASH  &kp UNDERSCORE    &none  &none      &none      &none     &none     &kp DEL
+                                               &kp PIPE   &kp SPACE      &kp UNDERSCORE    &none  &none      &none
             >;
 
             label = "!@#$";
@@ -154,10 +207,10 @@
 
         number_layer {
             bindings = <
-&kp TAB       &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp ASTERISK     &kp N7     &kp N8         &kp N9  &kp EQUAL  &kp BSPC
-&kp ESC       &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &kp MINUS        &kp N4     &kp N5         &kp N6  &kp N0     &kp ENTER
-&kp LEFT_WIN  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &kp PLUS         &kp N1     &kp N2         &kp N3  &kp SLASH  &kp DOT
-                                    &none      &none      &none        &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT
+&kp TAB         &kp LC(Q)       &kp LC(W)       &kp LC(E)        &kp LC(R)        &kp LC(T)    &kp ASTERISK  &kp N7  &kp N8   &kp N9  &kp EQUAL    &kp BSPC
+&kp ESC         &mt LGUI LC(A)  &mt LALT LC(S)  &mt LCTRL LC(D)  &mt LSHFT LC(F)  &kp LC(G)    &kp MINUS     &kp N4  &kp N5   &kp N6  &kp PERCENT  &kp ENTER
+&kp LEFT_SHIFT  &kp LC(Z)       &kp LC(X)       &kp LC(C)        &kp LC(V)        &kp LC(B)    &kp PLUS      &kp N1  &kp N2   &kp N3  &kp SLASH    &none
+                                                &none            &none            &none        &kp N0        &none   &kp DOT
             >;
 
             label = "12345";
@@ -165,10 +218,10 @@
 
         Fn_layer {
             bindings = <
-&none  &kp F12  &kp F11  &kp F10  &kp F9     &none    &none   &none      &none      &none     &none     &kp BSPC
-&none  &kp F4   &kp F3   &kp F2   &kp F1     &none    &none   &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
-&none  &kp F8   &kp F7   &kp F6   &kp F5     &none    &none   &none      &none      &none     &none     &kp DEL
-                         &kp TAB  &kp SPACE  &none    &trans  &none      &none
+&none  &kp F12  &kp F11  &kp F10  &kp F9     &none    &none  &none      &none      &none     &none     &kp BSPC
+&none  &kp F4   &kp F3   &kp F2   &kp F1     &none    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&none  &kp F8   &kp F7   &kp F6   &kp F5     &none    &none  &none      &none      &none     &none     &kp DEL
+                         &kp TAB  &kp SPACE  &none    &none  &none      &none
             >;
 
             label = "Fn";
