@@ -92,6 +92,16 @@
             bindings = <&kp COLON>;
             key-positions = <16 22>;
         };
+
+        combo_ctrl_f19 {
+            bindings = <&kp LC(F19)>;
+            key-positions = <26 27 28>;
+        };
+
+        combo_ctrl_f20 {
+            bindings = <&kp LC(F20)>;
+            key-positions = <2 3 4>;
+        };
     };
 
     macros {
