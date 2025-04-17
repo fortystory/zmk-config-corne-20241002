@@ -87,6 +87,11 @@
             key-positions = <19 21>;
             layers = <2>;
         };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <16 22>;
+        };
     };
 
     macros {
